@@ -4,6 +4,9 @@ window.onload=function(){
   wrapper=document.querySelector(".wrapper");
   menuIsVisible=false;
   window.addEventListener("click",toggleCtxMenuOff);
+  contextmenu.addEventListener("contextmenu",function(e){
+    e.preventDefault();
+  })
   addContextmenu(wrapper);
   }
 function addContextmenu(ele){
